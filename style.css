@@ -170,6 +170,28 @@ footer a {
     margin-left: -2vw;
 }
 
+article img {
+    width: 50%;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+h3 {
+    margin-left: 5vw;
+    font-family: 'Newsreader', serif;
+}
+
+article {
+    margin-bottom: 10vw;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 400px) {
     #scroll {
         margin-top: 100vw;
