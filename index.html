@@ -63,8 +63,18 @@
         </div>
     </header>
 
+  <!--   Her ligger vores template med en article, der svarer til hvert id. Det vil sige at vores article-tag indeholder vores loop view med ruterne.-->
     <!--    I main-tagget tilføjer vi alt der ligger i vores template-tag med JavaScript-->
-    <main></main>
+    <main>
+        <template>
+            <article>
+                <img src="" alt="" class="naturbillede">
+                <h2 class="rutenavn"></h2>
+                <h3 class="område"></h3>
+                <h3 class="distance"></h3>
+            </article>
+        </template>
+    </main>
 
     <!--    Footeren kan vi tilføje kode i, og style som vi vil. Hvordan skal den se ud?-->
     <footer>
@@ -93,15 +103,17 @@
     </footer>
 
 
-    <!--   Her ligger vores template med en article, der svarer til hvert id. Det vil sige at vores article-tag indeholder vores loop view med ruterne.-->
-    <template>
+
+<!--    <template>
         <article>
             <img src="" alt="">
             <p></p>
             <a href=""></a>
         </article>
-    </template>
+    </template>-->
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
