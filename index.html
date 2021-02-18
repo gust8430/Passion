@@ -15,37 +15,51 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!--   Her ligger al den kode vi vil tilføje udover vores template der svarer til hvert id-->
     <header>
-        <nav id="menu">
-            <!--          Dette img-tag er vores logo-->
-            <img src="" alt="">
-            <!--           Disse tags er vores menu-->
-            <a href="">RUTER</a>
-            <a href="">OM</a>
-            <a href="">KONTAKT</a>
-        </nav>
+        <div id="splash">
+            <img src="images/logo_hvid.svg" alt="Logo">
+            <div id="menuknap">☰</div>
+            <div id="menu" class="hidden">
+                <a href="">RUTER</a>
+                <a href="">OM</a>
+                <a href="">KONTAKT</a>
+            </div>
+            <a href="#voresruter">
+                <img class="pulse" id="scroll" src="images/Artboard%201.svg" alt="scroll ned knap">
+            </a>
+        </div>
+        <div id="body">
+            <div class="section_wrapper">
+                <div id="tidengar">
+                    <h1 id="voresruter">Tiden går</h1>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, itaque. Impedit nemo quisquam cupiditate reprehenderit nihil molestiae tempore perspiciatis, ut adipisci dolorum optio doloribus unde ipsam vero repellat eos, non.</span><span>Error delectus, placeat porro reprehenderit molestias vero fugit voluptate odit nam iste neque sunt cum similique. Ipsa, amet placeat, beatae ea assumenda unde illum neque, temporibus dicta odio velit quo.</span></p>
+                </div>
+                <div>
+                    <img src="images/img.jpg" alt="Billede af en skovsti">
+                </div>
+            </div>
 
-        <!--        Her ligger vores splashbillede-->
-        <img src="" alt="">
-        <!--        Og her ligger vores scroll-down-knap -->
-        <a href=""></a>
 
-        <h1>Vores ruter</h1>
-        <p>Her skal vi generere en tekst, der fortæller om vores ruter og vores koncept.</p>
-        <h2>Alle ruter</h2>
-        <nav>
-            <button data-retter="alle" class="valgt">Alle ruter</button>
-            <button data-retter="5km">5 km</button>
-            <button data-retter="10km">10 km</button>
-            <button data-retter="15km">15 km</button>
-            <button data-retter="20km">20 km</button>
-            <button data-retter="over20">Over 20 km</button>
-        </nav>
+            <h2>Alle ruter</h2>
+            <nav>
+                <button data-retter="alle" class="valgt">Alle ruter</button>
+                <button data-retter="5til10">5-10 km</button>
+                <button data-retter="10til20">10-20 km</button>
+                <button data-retter="20til30">20-30 km</button>
+                <button data-retter="over30">Over 30 km</button>
+            </nav>
+
+        </div>
     </header>
 
     <!--    I main-tagget tilføjer vi alt der ligger i vores template-tag med JavaScript-->
@@ -53,6 +67,28 @@
 
     <!--    Footeren kan vi tilføje kode i, og style som vi vil. Hvordan skal den se ud?-->
     <footer>
+        <img src="images/logo_hvid.svg" alt="Logo i footer">
+        <hr>
+        <div id="footer">
+            <a href="">RUTER</a>
+            <a href="">OM</a>
+            <a href="">KONTAKT</a>
+        </div>
+        <hr>
+        <div id="social">
+            <a href="">
+                <img src="images/Component%202%20%E2%80%93%201.png" alt="twitter-ikon">
+            </a>
+            <a href="">
+                <img src="images/Component%201%20%E2%80%93%201.png" alt="instagram-ikon">
+            </a>
+            <a href="">
+                <img id="fb" src="images/Component%203%20%E2%80%93%201.png" alt="facebook-ikon">
+            </a>
+
+
+        </div>
+
     </footer>
 
 

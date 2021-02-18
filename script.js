@@ -29,6 +29,8 @@ let filter = "alle";
 //Derudover sætter vi en eventlistener på hver af disse knapper, da vi gerne vil kalde en funktion, når der klikkes på en af dem
 //Denne funktion kalder til sidst også en ny funktion, kaldet hentData, der sørger for at fetch'e al vores data fra restdb
 function start() {
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
     const filterKnapper = document.querySelectorAll("nav a");
 
     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerRetter));
@@ -89,4 +91,21 @@ function visRuter() {
 //Denne funktion tager fat i id'et for præcis det objekt vi har klikket på, og kan, ved hjælp af html-siden til vores singleview, vise al den rigtige content for dette objekt
 function visDetaljer(hvad) {
     location.href = `02-detalje.html?id=${hvad._id}`;
+}
+
+function toggleMenu() {
+    console.log("toggleMenu");
+
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        document.querySelector("#menuknap").textContent = "X";
+    }
+
+
+
 }
