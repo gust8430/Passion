@@ -58,7 +58,7 @@ footer {
     width: 20%;
     height: 20%;
     cursor: pointer;
-    margin-top: 75vw;
+    margin-top: 120vw;
 }
 
 .pulse {
@@ -161,6 +161,16 @@ footer a {
 #fb {
     width: 100%;
     margin-left: -2vw;
+}
+
+@media (min-width: 440px) {
+    #scroll {
+        margin-top: 80vw;
+    }
+
+    .section_wrapper img {
+        margin-top: 15vw;
+    }
 }
 
 @media (min-width: 542px) {
@@ -337,7 +347,7 @@ footer a {
 
 @media (min-width: 1240px) {
     #scroll {
-        margin-top: 20vw;
+        margin-top: 24vw;
     }
 
     #splash img {
