@@ -93,6 +93,7 @@ function visRuter() {
 
 //Denne funktion tager fat i id'et for præcis det objekt vi har klikket på, og kan, ved hjælp af html-siden til vores singleview, vise al den rigtige content for dette objekt
 function visDetaljer(hvad) {
+    console.log("visDetaljer");
     location.href = `detalje.html?id=${hvad._id}`;
 }
 
