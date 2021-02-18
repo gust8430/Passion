@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -143,6 +147,8 @@ footer a {
     color: white;
     cursor: pointer;
     margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #footer {
