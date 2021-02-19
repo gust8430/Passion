@@ -52,11 +52,11 @@ function visRuter(x) {
     document.querySelector(".område").textContent = rute.område;
     document.querySelector(".distance").textContent = rute.distance;
 
-    document.querySelector("a").addEventListener("click", tilbageMenu);
+//    document.querySelector(".tilbage").addEventListener("click", tilbageMenu);
 }
 
 
 //Denne funktion gør, at vi går et step tilbage i vores historie, når vi trykker på den tilbage-knap vi har implementeret på vores singleview
-function tilbageMenu() {
-    history.back();
-}
+//function tilbageMenu() {
+//    window.history.back();
+//}

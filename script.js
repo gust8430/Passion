@@ -5,7 +5,8 @@ const medieurl = "https://ruter-80b2.restdb.io/media/";
 //Denne variabel hiver fat i vores h2'er i vores html-dokument, da vi skal kunne ændre textcontent når vi filtrere, for at fortælle brugeren hvilken knap der er blevet trykket på
 
 const header = document.querySelector("header h2");
-
+const main = document.querySelector("main");
+const template = document.querySelector("template").content;
 
 
 //Denne API-key giver os adgang til vores data i vores restdb
@@ -72,16 +73,16 @@ async function hentData() {
 //Al dette content "append'er" vi i vores main-tag via vores konstante variabel "klon". Det gør at alle vores ruter bliver implementeret på vores site
 //Derudover har vi tilføjet en eventlistener på vores article-tag, der gør at vores funktion visDetaljer bliver kaldt, når man klikker på det
 function visRuter() {
-    const main = document.querySelector("main");
-    const template = document.querySelector("template").content;
+
     main.textContent = "";
 
     ruter.forEach(rute => {
         console.log("Rute");
-        console.log("filter:" + filter);
+        console.log("beliggenhed:" + rute.beliggenhed);
+        console.log("filter" + filter);
         if (filter == rute.beliggenhed || filter == "alle") {
             const klon = template.cloneNode(true);
-            console.log(medieurl + rute.naturbillede);
+            console.log("er i for.each");
             klon.querySelector(".naturbillede").src = medieurl + rute.naturbillede;
             klon.querySelector(".rutenavn").textContent = rute.rutenavn;
             klon.querySelector(".område").textContent = rute.område;
