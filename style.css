@@ -15,6 +15,25 @@ article {
     border: solid black 2px;
     padding: 2vw;
     margin: 2vw;
+    margin-bottom: 10vw;
+    cursor: pointer;
+}
+
+article:hover {
+    animation-name: article_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes article_kf {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(0.95);
+    }
 }
 
 #menuknap {
@@ -133,6 +152,10 @@ button {
 
 button:hover {
     background-color: #BE815D;
+    animation-name: article_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 .valgt {
@@ -191,11 +214,6 @@ p {
     margin-left: 5vw;
     font-family: 'Newsreader', serif;
 }
-
-article {
-    margin-bottom: 10vw;
-}
-
 
 .detaljelogo {
     width: 50%;
