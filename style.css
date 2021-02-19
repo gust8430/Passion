@@ -11,6 +11,11 @@ body {
 
 }
 
+article {
+    border: solid black 2px;
+    padding: 2vw;
+    margin: 2vw;
+}
 
 #menuknap {
     color: white;
@@ -85,8 +90,7 @@ footer {
 
 
 .section_wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+
     margin-top: 5vw;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -94,9 +98,10 @@ footer {
 }
 
 .section_wrapper img {
-    width: 100%;
-    height: 50%;
+    width: 60vw;
+    height: 30vh;
     margin-top: 20vw;
+    margin-left: 10vw;
     border: 2px solid black;
     border-radius: 100px;
 }
@@ -201,8 +206,14 @@ article {
         margin-left: 8vw;
     }
 
-    h2 {
-        margin-top: 2vw;
+    #alleruter {
+        margin-top: 10vw;
+    }
+
+    .section_wrapper img {
+        width: 50vw;
+        margin-top: 10vw;
+        margin-left: 20vw;
     }
 
 
@@ -214,7 +225,7 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 15vw;
+        width: 45vw;
     }
 }
 
@@ -224,13 +235,27 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 15vw;
+        width: 40vw;
+        margin-top: 5vw;
     }
 }
 
 @media (min-width: 550px) {
     #scroll {
         margin-top: 70vw;
+    }
+
+    .section_wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .section_wrapper img {
+        width: 35vw;
+        height: 30vh;
+        margin-top: 5vw;
+        margin-left: 0vw;
     }
 
 }
@@ -241,13 +266,15 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 10vw;
-        width: 100%;
-        height: 60%;
+        width: 30vw;
+        height: 30vh;
+        margin-top: 5vw;
+        margin-left: 0vw;
     }
 
+
     footer a {
-        margin-top: 2vw;
+        margin-top: 1vw;
     }
 
     #social {
@@ -261,17 +288,19 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 6vw;
-        width: 80%;
-        height: 55%;
+        margin-top: 3vw;
+        width: 25vw;
+        height: 30vh;
     }
 
-    footer a {
-        margin-top: 1vw;
+    #footer {
+        margin-top: 2vw;
     }
 
     #social {
-        width: 23%
+        width: 23%;
+        margin-top: 0vw;
+
     }
 
     .section_wrapper {
@@ -288,32 +317,32 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 5vw;
-        width: 70%;
-        height: 60%;
-        margin-left: 5vw;
-    }
-
-    #splash img {
-        width: 60%;
-        margin-left: 20vw;
-    }
-
-    #menuknap {
-
-        margin-top: -30vw;
-    }
-
-    #footer {
-        display: flex;
-        flex-direction: column;
         margin-top: 1vw;
+        width: 22vw;
+        height: 30vh;
     }
+}
 
-    #social {
-        margin-top: 1vw;
+#splash img {
+    width: 60%;
+    margin-left: 20vw;
+}
 
-    }
+#menuknap {
+
+    margin-top: -30vw;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+#social {
+    margin-top: 1vw;
+
+}
 
 
 }
@@ -342,9 +371,6 @@ article {
         margin-top: 1vw;
     }
 
-    #social {
-        margin-top: -0.5vw;
-    }
 }
 
 @media (min-width: 990px) {
@@ -358,6 +384,11 @@ article {
 
     #social {
         width: 20%;
+    }
+
+    .section_wrapper img {
+        margin-top: 0vw;
+        width: 20vw;
     }
 
 }
@@ -382,9 +413,9 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 2vw;
-        width: 60%;
-        height: 70%;
+        width: 18vw;
+        height: 31vh;
+        margin-top: -1vw;
     }
 
     #social {
@@ -393,6 +424,13 @@ article {
         margin-left: -3vw;
     }
 
+    button {
+        margin-bottom: 5vw;
+    }
+
+    #alleruter {
+        font-size: 3vw;
+    }
 
 }
 
@@ -426,6 +464,9 @@ article {
         margin-right: 15vw;
     }
 
+    #alleruter {
+        margin-top: -1vw;
+    }
 
 }
 
@@ -440,10 +481,22 @@ article {
     }
 
     .section_wrapper img {
-        margin-top: 2vw;
-        width: 100%;
+        margin-top: -2vw;
+        width: 18vw;
+        height: 35vh;
     }
 
+    .section_wrapper {
+        margin-top: 6vw;
+    }
+
+    #alleruter {
+        margin-top: 6vw;
+    }
+
+    #social {
+        margin-top: -1vw;
+    }
 
 
 }

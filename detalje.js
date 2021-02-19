@@ -39,20 +39,23 @@ async function loadJSON() {
     console.log("Rute: ", rute);
     visRuter(rute);
 
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
+
 
 //I denne funktion får vi vist id'et for det objekt vi har haft trykket på. Vi vil gerne have noget content der svarer til det objekt fra vores array der bliver vist. Al dette content er det vi har genereret på restdb, og hentet ind i vores dokument som json
 //Derudover har vi tilføjet en eventlistener på den tilbage-knap vi har implementeret på vores singleview, der gør at vores funktion tilbageMenu bliver kaldt, når man klikker på det
 function visRuter(x) {
     console.log("visRuter" + rute.naturbillede);
-    document.querySelector(".naturbillede").src = medieurl + x.naturbillede;
+    document.querySelector(".rutebillede").src = medieurl + x.rutebillede;
 
 
     document.querySelector(".rutenavn").textContent = rute.rutenavn;
     document.querySelector(".område").textContent = rute.område;
     document.querySelector(".distance").textContent = rute.distance;
+    document.querySelector(".txt").textContent = rute.beskrivendetekst;
 
-//    document.querySelector(".tilbage").addEventListener("click", tilbageMenu);
+    //    document.querySelector(".tilbage").addEventListener("click", tilbageMenu);
 }
 
 
@@ -60,3 +63,19 @@ function visRuter(x) {
 //function tilbageMenu() {
 //    window.history.back();
 //}
+
+
+function toggleMenu() {
+    console.log("toggleMenu");
+
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        document.querySelector("#menuknap").textContent = "X";
+    }
+
+}
