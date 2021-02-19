@@ -29,9 +29,9 @@ let filter = "alle";
 //Denne funktion kalder til sidst også en ny funktion, kaldet hentData, der sørger for at fetch'e al vores data fra restdb
 function start() {
     console.log("start");
-    //document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-    const filterKnapper = document.querySelectorAll("nav a");
+    const filterKnapper = document.querySelectorAll("nav button");
 
     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerRuter));
     hentData();
@@ -47,10 +47,11 @@ function start() {
 
 
 function filtrerRuter() {
-    filter = this.dataset.ruter;
+    filter = this.dataset.beliggenhed;
     console.log("Ruter", filter);
     document.querySelector(".valgt").classList.remove("valgt");
     this.classList.add("valgt");
+    console.log(this.textContent);
     header.textContent = this.textContent;
 
 
@@ -77,14 +78,15 @@ function visRuter() {
 
     ruter.forEach(rute => {
         console.log("Rute");
-        if (filter == rute.kategori || filter == "alle") {
+        console.log("filter:" + filter);
+        if (filter == rute.beliggenhed || filter == "alle") {
             const klon = template.cloneNode(true);
+            console.log(medieurl + rute.naturbillede);
             klon.querySelector(".naturbillede").src = medieurl + rute.naturbillede;
             klon.querySelector(".rutenavn").textContent = rute.rutenavn;
             klon.querySelector(".område").textContent = rute.område;
             klon.querySelector(".distance").textContent = rute.distance;
-
-            klon.querySelector("article").addEventListener("click", () => visDetaljer(ruter));
+            klon.querySelector("article").addEventListener("click", () => visDetaljer(rute));
             main.appendChild(klon);
         }
     })
@@ -92,9 +94,9 @@ function visRuter() {
 
 
 //Denne funktion tager fat i id'et for præcis det objekt vi har klikket på, og kan, ved hjælp af html-siden til vores singleview, vise al den rigtige content for dette objekt
-function visDetaljer(hvad) {
+function visDetaljer(prut) {
     console.log("visDetaljer");
-    location.href = `detalje.html?id=${hvad._id}`;
+    location.href = `detalje.html?id=${prut._id}`;
 }
 
 

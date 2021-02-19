@@ -7,9 +7,15 @@ const medieurl = "https://ruter-80b2.restdb.io/media/";
 let rute;
 
 //Denne API-key giver os adgang til vores data i vores restdb
-const myHeaders = {
-    "x-apikey": "602e59735ad3610fb5bb62e6"
-}
+//const myHeaders = {
+//    "x-apikey": "602e59735ad3610fb5bb62e6"
+//}
+const options = {
+    headers: {
+        'x-apikey': "602e59735ad3610fb5bb62e6"
+    }
+};
+
 console.log("ID", id);
 
 //Når vi sætter følgende eventlistener på vores document, kan vi sikre os at al vores html-content er loaded, før vi fetch'er vores data og tilføjer JavaScript
@@ -22,20 +28,26 @@ async function loadJSON() {
     console.log("visDetaljer");
 
 
-    const JSONData = await fetch(`https://ruter-80b2.restdb.io/rest/ruteliste/${id}`, {
-        headers: myHeaders
-    });
+    //    const JSONData = await fetch(`https://ruter-80b2.restdb.io/rest/ruteliste/${id}`, {
+    //        headers: myHeaders
+    //    });
+
+    const JSONData = await fetch(`https://ruter-80b2.restdb.io/rest/ruteliste/${id}`, options);
+
     rute = await JSONData.json();
 
-    console.log("Ruter", rute);
+    console.log("Rute: ", rute);
     visRuter(rute);
 
 }
 
 //I denne funktion får vi vist id'et for det objekt vi har haft trykket på. Vi vil gerne have noget content der svarer til det objekt fra vores array der bliver vist. Al dette content er det vi har genereret på restdb, og hentet ind i vores dokument som json
 //Derudover har vi tilføjet en eventlistener på den tilbage-knap vi har implementeret på vores singleview, der gør at vores funktion tilbageMenu bliver kaldt, når man klikker på det
-function visRuter() {
-    document.querySelector(".naturbillede").src = medieurl + rute.naturbillede;
+function visRuter(x) {
+    console.log("visRuter" + rute.naturbillede);
+    document.querySelector(".naturbillede").src = medieurl + x.naturbillede;
+
+
     document.querySelector(".rutenavn").textContent = rute.rutenavn;
     document.querySelector(".område").textContent = rute.område;
     document.querySelector(".distance").textContent = rute.distance;
