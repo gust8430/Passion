@@ -186,12 +186,31 @@ h3 {
     font-family: 'Newsreader', serif;
 }
 
+p {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    font-family: 'Newsreader', serif;
+}
+
 article {
     margin-bottom: 10vw;
 }
 
 
+.detaljelogo {
+    width: 50%;
+    margin-bottom: 10vw;
+}
 
+.tilbage {
+    text-decoration: none;
+    margin-left: 2vw;
+    color: white;
+}
+
+.tilbage:hover {
+    color: black;
+}
 
 
 
@@ -226,6 +245,10 @@ article {
 
     .section_wrapper img {
         width: 45vw;
+    }
+
+    .tilbage {
+        font-size: 3.5vw;
     }
 }
 
@@ -280,6 +303,15 @@ article {
     #social {
         width: 23%;
     }
+
+    .tilbage {
+        font-size: 3vw;
+    }
+
+    .detaljelogo {
+        width: 50%;
+        margin-bottom: 10vw;
+    }
 }
 
 @media (min-width: 710px) {
@@ -320,6 +352,15 @@ article {
         margin-top: 1vw;
         width: 22vw;
         height: 30vh;
+    }
+
+    .detaljelogo {
+        width: 40%;
+        margin-bottom: 15vw;
+    }
+
+    .tilbage {
+        font-size: 2.5vw;
     }
 }
 
@@ -391,6 +432,14 @@ article {
         width: 20vw;
     }
 
+    .detaljelogo {
+        width: 30%;
+    }
+
+    .tilbage {
+        font-size: 2vw;
+    }
+
 }
 
 @media (min-width: 1090px) {
@@ -430,6 +479,10 @@ article {
 
     #alleruter {
         font-size: 3vw;
+    }
+
+    .tilbage {
+        font-size: 2vw;
     }
 
 }
@@ -498,5 +551,8 @@ article {
         margin-top: -1vw;
     }
 
+    .tilbage {
+        font-size: 1.5vw;
+    }
 
 }
