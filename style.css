@@ -417,6 +417,10 @@ p {
         grid-template-columns: repeat(2, 1fr);
 
     }
+
+    button {
+        padding: 2vw;
+    }
 }
 
 @media (min-width: 810px) {
