@@ -55,14 +55,14 @@ function visRuter(x) {
     document.querySelector(".distance").textContent = rute.distance;
     document.querySelector(".txt").textContent = rute.beskrivendetekst;
 
-    //    document.querySelector(".tilbage").addEventListener("click", tilbageMenu);
+    document.querySelector("button").addEventListener("click", tilbageRuterne);
 }
 
 
 //Denne funktion gør, at vi går et step tilbage i vores historie, når vi trykker på den tilbage-knap vi har implementeret på vores singleview
-//function tilbageMenu() {
-//    window.history.back();
-//}
+function tilbageRuterne() {
+    window.history.back();
+}
 
 
 function toggleMenu() {

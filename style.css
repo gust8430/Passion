@@ -274,13 +274,13 @@ p {
     margin-bottom: 10vw;
 }
 
-.tilbage {
+#tilbage {
     text-decoration: none;
     margin-left: 2vw;
     color: white;
 }
 
-.tilbage:hover {
+#tilbage:hover {
     color: black;
 }
 
@@ -319,7 +319,7 @@ p {
         width: 45vw;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 3.5vw;
     }
 }
@@ -376,7 +376,7 @@ p {
         width: 23%;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 3vw;
     }
 
@@ -431,7 +431,7 @@ p {
         margin-bottom: 15vw;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 2.5vw;
     }
 }
@@ -508,7 +508,7 @@ p {
         width: 30%;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 2vw;
     }
 
@@ -571,7 +571,7 @@ p {
         font-size: 3vw;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 2vw;
     }
 
@@ -641,7 +641,7 @@ p {
         margin-top: -1vw;
     }
 
-    .tilbage {
+    #tilbage {
         font-size: 1.5vw;
     }
 
