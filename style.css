@@ -130,10 +130,10 @@ footer {
 
 
 #scroll {
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: 15%;
     cursor: pointer;
-    margin-top: 120vw;
+    margin-top: 150vw;
 }
 
 .pulse {
