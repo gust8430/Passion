@@ -88,12 +88,12 @@ article {
 }
 
 #splash {
-    background-image: url(images/splash.jpg);
+    background-image: url(/images/splash.jpg);
     height: 100vh;
 }
 
 footer {
-    background-image: url(images/splash.jpg);
+    background-image: url(/images/splash.jpg);
     height: 20vh;
 }
 
