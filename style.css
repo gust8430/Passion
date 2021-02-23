@@ -24,15 +24,16 @@ main {
 }
 
 .rutenavn {
-    margin: 1vw 1vw 2vw 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    color: #BE815D;
 }
 
 .område {
-    margin: 1vw 1vw 2vw 1vw;
+    margin: 1vw 1vw 0vw 1vw;
 }
 
 .distance {
-    margin: 1vw 1vw 2vw 1vw;
+    margin: 1vw 1vw 1.5vw 1vw;
 }
 
 .naturbillede {
@@ -49,6 +50,10 @@ main {
     margin: 2vw;
     cursor: pointer;
     background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    display: flex;
 }
 
 .loopart:hover {
@@ -56,6 +61,17 @@ main {
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
+}
+
+.knap {
+    text-align: center;
+    justify-content: center;
+    display: contents;
+}
+
+.mere {
+    background-color: #919A62;
+    margin: 2vw;
 }
 
 @keyframes article_kf {
@@ -69,19 +85,7 @@ main {
 }
 
 
-/*----------HER SLUTTER MAIN INDEX.HTML------------*/
-
-/*----------Article for detalje side START------------*/
-article {
-    border: solid black 2px;
-    padding: 2vw;
-    margin: 2vw;
-    margin-bottom: 10vw;
-    cursor: pointer;
-
-}
-
-/*----------Article for detalje side SLUT------------*/
+/*----------HEADER STARTER HER ------------*/
 
 #menuknap {
     color: white;
@@ -156,8 +160,6 @@ footer {
     }
 }
 
-
-
 .section_wrapper {
 
     margin-top: 5vw;
@@ -182,12 +184,17 @@ footer {
     padding: 0 3vw;
 }
 
+#alleruter {
+    margin-left: 11vw;
+}
+
 h2 {
     margin-left: 5vw;
     font-family: 'Cinzel', serif;
     margin-top: 10vw;
     margin-bottom: 3vw;
 }
+
 
 /*-------FILTRERING KNAPPER START-------*/
 nav {
@@ -220,11 +227,13 @@ button:hover {
     background-color: #BE815D;
 }
 
-/*-------FILTRERING KNAPPER SLUT-------*/
+
+/*-----------FOOTER-----------*/
 footer {
     display: flex;
     flex-direction: row;
     padding: 2vw;
+    justify-content: space-between;
 }
 
 footer img {
@@ -236,8 +245,8 @@ footer a {
     color: white;
     cursor: pointer;
     margin-top: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 #footer {
@@ -249,12 +258,28 @@ footer a {
 #social {
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
+    margin-top: 1vw;
+    width: 22vw;
+    height: auto;
+    text-align: center;
 }
 
-#fb {
+/*#fb {
     width: 100%;
     margin-left: -2vw;
+}*/
+
+
+/*-----------SINGLE VIEW-----------*/
+
+
+article {
+    border: solid black 2px;
+    padding: 2vw;
+    margin: 2vw;
+    margin-bottom: 10vw;
+    cursor: pointer;
+
 }
 
 article img {
@@ -288,6 +313,9 @@ p {
     color: black;
 }
 
+
+
+/*-----------TABLET STARTER HER-----------*/
 @media (min-width: 768px) {
     #scroll {
         top: 80vw;
@@ -312,13 +340,21 @@ p {
 
     main {
         grid-template-columns: repeat(2, 1fr);
+    }
 
+    .mere {
+        margin: 1vw;
     }
 
     button {
         padding: 2vw;
     }
 
+    #alleruter {
+        margin-left: 8.5vw;
+    }
+
+    /*-----------FOOTER-----------*/
     footer #footerlogo {
         width: 30%;
     }
@@ -340,23 +376,27 @@ p {
         margin-right: 6vw;
     }
 
-    #social {
-        display: flex;
-        flex-direction: row;
-        margin-top: 3vw;
-    }
-
-    #twitter,
+    /*  #twitter,
     #insta {
         width: 3vw;
     }
 
     #fb {
         width: 300%;
+    }*/
+    #social {
+        margin-top: 0vw;
+        width: 17vw;
+        height: auto;
+    }
+
+    #social a {
+        margin-top: 1vw;
     }
 
 }
 
+/*-----------DESKTOP STARTER HER-----------*/
 @media (min-width: 1160px) {
     #scroll {
         top: 40vw;
@@ -396,12 +436,16 @@ p {
 
     #alleruter {
         margin-top: 9vw;
-        margin-left: 3vw;
+        margin-left: 3.3vw;
         font-size: 2.5vw;
     }
 
     main {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mere {
+        margin: 0.5vw;
     }
 
     button {
@@ -414,6 +458,7 @@ p {
         margin-left: 2.8vw;
     }
 
+    /*-----------FOOTER-----------*/
     footer #footerlogo {
         width: 30%;
     }
@@ -434,18 +479,20 @@ p {
     }
 
     #social {
-        margin-top: 3vw;
-        margin-left: 7vw;
+        margin-top: 0vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 11.5vw;
     }
 
-    #twitter,
+    /*   #twitter,
     #insta {
         width: 2vw;
     }
 
     #fb {
         width: 600%;
-    }
+    }*/
 
 }
 

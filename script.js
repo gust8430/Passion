@@ -88,6 +88,7 @@ function visRuter() {
             klon.querySelector(".område").textContent = rute.område;
             klon.querySelector(".distance").textContent = rute.distance;
             klon.querySelector(".loopart").addEventListener("click", () => visDetaljer(rute));
+            klon.querySelector(".knap").addEventListener("click", () => visDetaljer(rute));
             main.appendChild(klon);
         }
     })
