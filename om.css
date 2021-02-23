@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: beige;
+}
+
+#menuknap {
+    color: black;
+}
+
+#menu a {
+    color: black;
+}
+
+/*OM.HTML SIDE*/
+
+#om_section {
+    display: flex;
+    flex-direction: column;
+    height: 170vw;
+    background-color: beige;
+
+}
+
+#om_section h1 {
+    font-size: 3rem;
+    font-family: 'Newsreader', serif;
+}
+
+#om_section p {
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    font-family: 'Newsreader', serif;
+}
+
+.front {
+    position: absolute;
+    top: 70vw;
+    bottom: 0vw;
+    left: 19.5vw;
+    width: 60vw;
+    height: 48vw;
+
+}
+
+.back {
+    position: absolute;
+    top: 40vw;
+    left: 5vw;
+    opacity: 50%;
+    height: 100vw;
+    width: 90vw;
+}
+
+.om_tekst {
+    margin: 5vw;
+    margin-top: 13vw;
+    padding-right: 12vw;
+    padding-left: 5vw;
+    position: relative;
+    top: 100vw;
+}
+
+#mission_section {
+    position: absolute;
+    padding-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    height: 140vw;
+    background-color: beige;
+
+
+}
+
+.mission_tekst {
+    position: relative;
+    top: 5vw;
+    margin: 5vw;
+    margin-top: 9vw;
+    padding-right: 6vw;
+    margin-left: 10vw;
+}
+
+
+#mission_section h1 {
+    font-size: 2.4rem;
+    font-family: 'Newsreader', serif;
+    margin-bottom: 1vw;
+}
+
+#mission_section p {
+    margin-top: 6vw;
+    margin-right: 4vw;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    font-family: 'Newsreader', serif;
+}
+
+.spor {
+    position: absolute;
+    top: 6.5vw;
+    left: 0vw;
+}
+
+.pic {
+    position: relative;
+    top: 0vw;
+    left: 5vw;
+    height: 60vw;
+    width: 90vw;
+}
+
+footer {
+    position: relative;
+    top: 150vw;
+}
+
+/*-----------FOOTER-----------*/
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 40%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    width: 22vw;
+    height: auto;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+
+    #om_section {
+        display: flex;
+        flex-direction: row;
+        height: 60vw;
+        background-color: beige;
+
+    }
+
+    #om_section h1 {
+        font-size: 3rem;
+        font-family: 'Newsreader', serif;
+    }
+
+    #om_section p {
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        font-family: 'Newsreader', serif;
+    }
+
+    .front {
+        top: 50vw;
+        right: 0;
+        left: 55vw;
+        width: 40vw;
+        height: 28vw;
+
+    }
+
+    .back {
+        position: absolute;
+        top: 35vw;
+        left: 60vw;
+        opacity: 50%;
+        height: 48vw;
+        width: 40vw;
+    }
+
+    .om_tekst {
+        top: 0;
+        margin: 5vw;
+        margin-top: 13vw;
+        padding-right: 49vw;
+        padding-left: 5vw;
+    }
+
+    #mission_section {
+        position: absolute;
+        padding-top: 4vw;
+        display: flex;
+        flex-direction: row;
+        height: 50vw;
+        background-color: beige;
+
+
+    }
+
+    .mission_tekst {
+        margin: 5vw;
+        margin-top: 5vw;
+        padding-right: 4vw;
+        margin-left: 10vw;
+        top: 0;
+    }
+
+
+    #mission_section h1 {
+        font-size: 2.4rem;
+        font-family: 'Newsreader', serif;
+        margin-bottom: 1vw;
+    }
+
+    #mission_section p {
+        margin-top: 5vw;
+        margin-right: 0;
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        font-family: 'Newsreader', serif;
+    }
+
+    .spor {
+        position: absolute;
+        width: 51vw;
+        top: 5vw;
+        right: 5vw;
+        left: 0;
+    }
+
+    .pic {
+        height: 30vw;
+        width: 60vw;
+        bottom: 0;
+        right: 15vw;
+        left: 0;
+        top: 5vw;
+    }
+
+    footer {
+        position: relative;
+        top: 50vw;
+    }
+
+    /*-----------FOOTER-----------*/
+    footer #footerlogo {
+        width: 30%;
+    }
+
+    footer {
+        font-size: 2.5vw;
+    }
+
+    footer a {
+        margin-top: 2vw;
+        margin-left: 3vw;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    /*  #twitter,
+    #insta {
+        width: 3vw;
+    }
+
+    #fb {
+        width: 300%;
+    }*/
+    #social {
+        margin-top: 0vw;
+        width: 17vw;
+        height: auto;
+    }
+
+    #social a {
+        margin-top: 1vw;
+    }
+
+
+}
+
+@media (min-width: 1160px) {
+
+    #om_section {
+        display: flex;
+        flex-direction: row;
+        height: 50vw;
+        background-color: beige;
+
+    }
+
+    #om_section h1 {
+        font-size: 3rem;
+        font-family: 'Newsreader', serif;
+    }
+
+    #om_section p {
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        font-family: 'Newsreader', serif;
+    }
+
+    .front {
+        top: 35vw;
+        right: 0;
+        left: 55vw;
+        width: 40vw;
+        height: 28vw;
+
+    }
+
+    .back {
+        position: absolute;
+        top: 21vw;
+        left: 60vw;
+        opacity: 50%;
+        height: 48vw;
+        width: 40vw;
+    }
+
+    .om_tekst {
+        top: 8vw;
+        margin: 5vw;
+        margin-top: 7vw;
+        padding-right: 49vw;
+        padding-left: 5vw;
+    }
+
+    #mission_section {
+        position: absolute;
+        padding-top: 4vw;
+        display: flex;
+        flex-direction: row;
+        height: 40vw;
+        background-color: beige;
+
+
+    }
+
+    .mission_tekst {
+        margin: 5vw;
+        margin-top: 5vw;
+        padding-right: 7vw;
+        margin-left: 10vw;
+        top: 0;
+    }
+
+
+    #mission_section h1 {
+        font-size: 2.4rem;
+        font-family: 'Newsreader', serif;
+        margin-bottom: 1vw;
+    }
+
+    #mission_section p {
+        margin-top: 5vw;
+        margin-right: 0;
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        font-family: 'Newsreader', serif;
+    }
+
+    .spor {
+        position: absolute;
+        width: 45vw;
+        top: 3vw;
+        right: 5vw;
+        left: 0;
+    }
+
+    .pic {
+        height: 30vw;
+        width: 50vw;
+        bottom: 15vw;
+        top: 0;
+    }
+
+    footer {
+        position: relative;
+        top: 50vw;
+    }
+
+    /*-----------FOOTER-----------*/
+    footer #footerlogo {
+        width: 30%;
+    }
+
+    footer {
+        font-size: 1.5vw;
+    }
+
+    footer a {
+        margin-top: 1vw;
+        margin-left: 3vw;
+    }
+
+    #footer {
+        margin-top: 1vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    #social {
+        margin-top: 0vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 11.5vw;
+    }
+
+}

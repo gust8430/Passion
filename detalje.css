@@ -140,10 +140,13 @@ button:hover {
 }
 
 /*-------FILTRERING KNAPPER SLUT-------*/
+
+/*-----------FOOTER-----------*/
 footer {
     display: flex;
     flex-direction: row;
     padding: 2vw;
+    justify-content: space-between;
 }
 
 footer img {
@@ -155,8 +158,8 @@ footer a {
     color: white;
     cursor: pointer;
     margin-top: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 #footer {
@@ -168,12 +171,9 @@ footer a {
 #social {
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
-}
-
-#fb {
-    width: 100%;
-    margin-left: -2vw;
+    width: 22vw;
+    height: auto;
+    text-align: center;
 }
 
 .detaljelogo {
@@ -246,6 +246,7 @@ p {
         padding: 2vw;
     }
 
+    /*-----------FOOTER-----------*/
     footer #footerlogo {
         width: 30%;
     }
@@ -267,20 +268,24 @@ p {
         margin-right: 6vw;
     }
 
-    #social {
-        display: flex;
-        flex-direction: row;
-        margin-top: 3vw;
-    }
-
-    #twitter,
+    /*  #twitter,
     #insta {
         width: 3vw;
     }
 
     #fb {
         width: 300%;
+    }*/
+    #social {
+        margin-top: 0vw;
+        width: 17vw;
+        height: auto;
     }
+
+    #social a {
+        margin-top: 1vw;
+    }
+
 
     article img {
         height: 40vw;
@@ -293,6 +298,7 @@ p {
     }
 
     p {
+        font-family: 'Newsreader', serif;
         font-size: 2vw;
     }
 
@@ -354,6 +360,7 @@ p {
         margin-left: 2.8vw;
     }
 
+    /*-----------FOOTER-----------*/
     footer #footerlogo {
         width: 30%;
     }
@@ -374,17 +381,10 @@ p {
     }
 
     #social {
-        margin-top: 3vw;
-        margin-left: 7vw;
-    }
-
-    #twitter,
-    #insta {
-        width: 2vw;
-    }
-
-    #fb {
-        width: 600%;
+        margin-top: 0vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 11.5vw;
     }
 
 

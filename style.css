@@ -259,7 +259,6 @@ footer a {
 #social {
     display: flex;
     flex-direction: column;
-    margin-top: 1vw;
     width: 22vw;
     height: auto;
     text-align: center;
@@ -313,7 +312,6 @@ p {
 #tilbage:hover {
     color: black;
 }
-
 
 
 /*-----------TABLET STARTER HER-----------*/
@@ -395,6 +393,7 @@ p {
     #social a {
         margin-top: 1vw;
     }
+
 
 }
 
@@ -488,216 +487,4 @@ p {
         width: 11.5vw;
     }
 
-    /*   #twitter,
-    #insta {
-        width: 2vw;
-    }
-
-    #fb {
-        width: 600%;
-    }*/
-
 }
-
-
-/*
-
-@media (min-width: 810px) {
-    #scroll {
-        margin-top: 40vw;
-    }
-
-    .section_wrapper img {
-        margin-top: 1vw;
-        width: 22vw;
-        height: 30vh;
-    }
-
-    .detaljelogo {
-        width: 40%;
-        margin-bottom: 15vw;
-    }
-
-    #tilbage {
-        font-size: 2.5vw;
-    }
-
-    #splash img {
-        width: 60%;
-        margin-left: 20vw;
-    }
-
-    #menuknap {
-
-        margin-top: -30vw;
-    }
-
-    #footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1vw;
-    }
-
-    #social {
-        margin-top: 1vw;
-
-    }
-}
-
-@media (min-width: 890px) {
-    #scroll {
-        margin-top: 35vw;
-    }
-
-    .section_wrapper img {
-        margin-top: 5vw;
-        width: 70%;
-        height: 60%;
-        margin-left: 5vw;
-    }
-
-    #splash img {
-        margin-left: 17vw;
-    }
-
-    p {
-        font-size: 2vw;
-    }
-
-    #footer {
-        margin-top: 1vw;
-    }
-
-    main {
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-}
-
-@media (min-width: 990px) {
-    #scroll {
-        margin-top: 30vw;
-    }
-
-    #splash img {
-        margin-left: 18vw;
-    }
-
-    #social {
-        width: 20%;
-    }
-
-    .section_wrapper img {
-        margin-top: 0vw;
-        width: 20vw;
-    }
-
-    .detaljelogo {
-        width: 30%;
-    }
-
-    #tilbage {
-        font-size: 2vw;
-    }
-
-}
-
-@media (min-width: 1090px) {
-    #scroll {
-        margin-top: 25vw;
-    }
-
-    #splash img {
-        width: 55%;
-        margin-left: 21vw;
-    }
-
-    #menuknap {
-        margin-top: -25vw;
-        font-size: 4vw;
-    }
-
-    p {
-        font-size: 1.5vw;
-    }
-
-    .rutenavn {
-        margin: 1vw 1vw 1vw 1vw;
-    }
-
-    .område {
-        margin: 1vw 1vw 1vw 1vw;
-    }
-
-    .distance {
-        margin: 1vw 1vw 1vw 1vw;
-    }
-
-    .section_wrapper img {
-        width: 18vw;
-        height: 31vh;
-        margin-top: -1vw;
-    }
-
-    #social {
-        width: 20%;
-        margin-right: 5vw;
-        margin-left: -3vw;
-    }
-
-    button {
-        margin: 1vw 0.5vw 1vw 0.5vw;
-        padding: 1vw 2vw 1vw 2vw;
-    }
-
-    nav {
-        text-align: left;
-        margin-left: 2.8vw;
-    }
-
-    #alleruter {
-        font-size: 3vw;
-    }
-
-    #tilbage {
-        font-size: 2vw;
-    }
-
-}
-*/
-
-
-/*
-@media (min-width: 1240px) {
-    #scroll {
-        margin-top: 24vw;
-    }
-
-    #splash img {
-        width: 50%;
-        margin-left: 25vw;
-    }
-
-    .section_wrapper img {
-        margin-top: -2vw;
-        width: 18vw;
-        height: 35vh;
-    }
-
-    .section_wrapper {
-        margin-top: 6vw;
-    }
-
-    #alleruter {
-        margin-top: 6vw;
-    }
-
-    #social {
-        margin-top: -1vw;
-    }
-
-    #tilbage {
-        font-size: 1.5vw;
-    }
-
-}*/

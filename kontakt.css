@@ -11,6 +11,7 @@
         color: black;
     }
 
+
     /* Style inputs */
     input[type=text],
     select,
@@ -87,8 +88,7 @@
     }
 
 
-
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
 
         .column,
         input[type=indsend] {
@@ -96,5 +96,14 @@
             margin-top: 0;
         }
 
+    }
+
+    @media (min-width: 1160px) {
+
+        #input {
+            padding: 1vw;
+            font-size: 1.2vw;
+
+        }
 
     }
