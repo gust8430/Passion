@@ -24,8 +24,10 @@
 
 <body>
 
-    <!--   Her ligger al den kode vi vil tilføje udover vores template der svarer til hvert id-->
+    <!--   I headeren ligger al den kode vi vil tilføje udover vores template der svarer til hvert id i vores restdb-->
     <header>
+
+        <!--       Dette er vores burgermenu der vises på alle skærme-->
         <div id="splash">
             <img src="images/logo_hvid.svg" alt="Logo">
             <div id="menuknap">☰</div>
@@ -35,11 +37,13 @@
                 <a href="kontakt.html">KONTAKT</a>
             </div>
 
+            <!--           Denne er en scroll-knap, som man kan klikke på for at komme ned til vores filtrering fra forsiden-->
             <a href="#voresruter">
                 <img class="pulse" id="scroll" src="images/Artboard%201.svg" alt="scroll ned knap">
             </a>
         </div>
         <div id="body">
+            <!--       Denne div er en info-boks, der byder brugeren velkommen, og forklarer konceptet    -->
             <div class="section_wrapper">
                 <div id="tidengar">
                     <h1 id="voresruter">Tiden går</h1>
@@ -65,8 +69,8 @@
         </div>
     </header>
 
-    <!--   Her ligger vores template med en article, der svarer til hvert id. Det vil sige at vores article-tag indeholder vores loop view med ruterne.-->
-    <!--    I main-tagget tilføjer vi alt der ligger i vores template-tag med JavaScript-->
+    <!--   Her ligger vores template-tag med en article, der svarer til hvert id fra vores restdb. Det vil sige at vores article-tag indeholder vores loop view med ruterne.-->
+    <!--    I main-tagget tilføjer vi alt der ligger i vores template-tag med JavaScript ved at klone vores data-->
     <main>
         <template>
             <article class="loopart">
@@ -81,7 +85,7 @@
         </template>
     </main>
 
-    <!--    Footeren kan vi tilføje kode i, og style som vi vil. Hvordan skal den se ud?-->
+    <!--    I vores footer har vi et logo, en lille menu og ikoner til sociale medier-->
     <footer>
         <img id="footerlogo" src="images/logo_hvid.svg" alt="Logo i footer">
         <hr>

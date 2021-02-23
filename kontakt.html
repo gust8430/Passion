@@ -26,9 +26,13 @@
 <body>
 
     <header>
+
         <a href="index.html">
             <img class="detaljelogo" src="images/logo_sortt.svg" alt="Logo">
         </a>
+
+        <!--       Dette er vores burgermenu der vises på alle skærme-->
+
         <div class="menuknap" id="menuknap">☰</div>
         <div id="menu" class="hidden">
             <a href="index.html#voresruter">RUTER</a>
@@ -70,6 +74,8 @@
     </div>
 
     <footer>
+        <!--    I vores footer har vi et logo, en lille menu og ikoner til sociale medier-->
+
         <img id="footerlogo" src="images/logo_hvid.svg" alt="Logo i footer">
         <hr>
         <div id="footer">
@@ -95,9 +101,13 @@
     </footer>
 
     <script>
+        // Til denne fil, har vi ikke lavet et seperat JavaScript-fil, da der ikke var meget
+
         window.addEventListener("DOMContentLoaded", start);
 
         function start() {
+
+            // Her ligger koden til vores burgermenu, der gør at vi kan "toggle" mellem om vores menu skal være åben eller lukket
             document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
         }
@@ -109,6 +119,8 @@
             document.querySelector("#menu").classList.toggle("hidden");
 
             let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            //Vi laver derudover også om i textcontentet på burgermenuikonet alt efter om menuen er åben eller lukket
 
             if (erSkjult == true) {
                 document.querySelector("#menuknap").textContent = "☰";

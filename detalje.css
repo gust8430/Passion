@@ -14,7 +14,7 @@ body {
     /*Giver os en gradient baggrund*/
 }
 
-/*----------HER STARTER MAIN INDEX.HTML------------*/
+/*----------HER STARTER MAIN------------*/
 main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -32,10 +32,12 @@ main {
     /*Lægger en skygge på vores artikler*/
     margin: 2vw;
     cursor: pointer;
+    /* Gør det nemmere at navigere på sitet, da elementet med denne klasse, nu ser klikbar ud*/
     background-color: white;
 }
 
 .loopart:hover {
+    /*Her laver vi en css-animation og giver den fx navn og tid */
     animation-name: article_kf;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -43,6 +45,8 @@ main {
 }
 
 @keyframes article_kf {
+
+    /*Her kalder vi vores css-animation, der zoomer lidt ud, når man tager musen over*/
     from {
         transform: scale(1.0);
     }
@@ -50,8 +54,6 @@ main {
     to {
         transform: scale(0.95);
     }
-
-    /*Giver vores article en css-animation, så den zoomer lidt ind, når man tager musen over*/
 }
 
 
@@ -69,7 +71,9 @@ footer {
 
 #menuknap {
     text-align: right;
+    /*Hvis vores text aligner til højre, vil den ligge sig ude i højre side af skærmen*/
     margin-top: -28vw;
+    /*Ved at sætte margin-top i minus, kan vi nemt få menuknapper op ved siden af vores logo*/
     margin-right: 5vw;
     font-size: 10vw;
     cursor: pointer;
@@ -91,11 +95,14 @@ footer {
     cursor: pointer;
     font-family: 'Newsreader', serif;
     text-decoration: none;
+    /*Gør at a-tagget ikke er understreget*/
     font-size: 4.5vw;
 }
 
 
 .pulse {
+    /*Her laver vi en css-animation og giver den fx navn og tid */
+
     animation-name: pulse_kf;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -103,6 +110,8 @@ footer {
 }
 
 @keyframes pulse_kf {
+    /*Her kalder vi vores css-animation, der zoomer lidt ind, når man tager musen over*/
+
     from {
         transform: scale(0.8);
     }
@@ -153,6 +162,7 @@ footer {
     flex-direction: row;
     padding: 2vw;
     justify-content: space-between;
+    /* Her laver vi rum imellem elementerne i footeren*/
 }
 
 footer img {
@@ -170,6 +180,7 @@ footer a {
 #footer {
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
     margin-top: 2vw;
 }
 
@@ -181,9 +192,11 @@ footer a {
 #social {
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
     width: 22vw;
     height: auto;
     text-align: center;
+    /*Elementerne ligger sig i midten*/
 }
 
 .detaljelogo {
@@ -192,6 +205,7 @@ footer a {
 
 #tilbage {
     text-decoration: none;
+    /*Links er ikke understreget*/
     margin-left: 2vw;
     color: white;
     margin-top: -10vw;
@@ -249,6 +263,7 @@ p {
 
     main {
         grid-template-columns: repeat(2, 1fr);
+        /*Gør vores side responsivt, så artiklerne ligger sig ved siden af hinanden*/
 
     }
 

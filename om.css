@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    /*Gør at den ikke springer når vi linker til en anden side, men har en mere "smooth" bevægelse*/
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 #om_section {
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
     height: 170vw;
     background-color: beige;
 
@@ -41,6 +43,7 @@ body {
 
 .front {
     position: absolute;
+    /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     top: 70vw;
     bottom: 0vw;
     left: 19.5vw;
@@ -51,6 +54,7 @@ body {
 
 .back {
     position: absolute;
+    /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     top: 40vw;
     left: 5vw;
     opacity: 50%;
@@ -64,14 +68,17 @@ body {
     padding-right: 12vw;
     padding-left: 5vw;
     position: relative;
+    /*Ved at sætte positionen til relative, kan elementet med denne klasse, positionere sig ift. andre elementer med position absolute. Fx kan vi sætte billeder ovenpå hinanden*/
     top: 100vw;
 }
 
 #mission_section {
     position: absolute;
+    /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     padding-top: 4vw;
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
     height: 140vw;
     background-color: beige;
 
@@ -80,6 +87,7 @@ body {
 
 .mission_tekst {
     position: relative;
+    /*Ved at sætte positionen til relative, kan elementet med denne klasse, positionere sig ift. andre elementer med position absolute. Fx kan vi sætte billeder ovenpå hinanden*/
     top: 5vw;
     margin: 5vw;
     margin-top: 9vw;
@@ -104,12 +112,14 @@ body {
 
 .spor {
     position: absolute;
+    /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     top: 6.5vw;
     left: 0vw;
 }
 
 .pic {
     position: relative;
+    /*Ved at sætte positionen til relative, kan elementet med denne klasse, positionere sig ift. andre elementer med position absolute. Fx kan vi sætte billeder ovenpå hinanden*/
     top: 0vw;
     left: 5vw;
     height: 60vw;
@@ -118,6 +128,7 @@ body {
 
 footer {
     position: relative;
+    /*Ved at sætte positionen til relative, kan elementet med denne klasse, positionere sig ift. andre elementer med position absolute. Fx kan vi sætte billeder ovenpå hinanden*/
     top: 150vw;
 }
 
@@ -127,6 +138,7 @@ footer {
     flex-direction: row;
     padding: 2vw;
     justify-content: space-between;
+    /*Ved at sætte flex-direction til "row", kan elementerne ligge sig ved siden af hianden*/
 }
 
 footer img {
@@ -137,6 +149,7 @@ footer a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+    /* Gør det nemmere at navigere på sitet, da elementet med denne klasse, nu ser klikbar ud*/
     margin-top: 2vw;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -145,14 +158,18 @@ footer a {
 #footer {
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
 }
 
 #social {
     display: flex;
     flex-direction: column;
+    /*Ved at sætte flex-direction til "column", kan elementerne ligge ovenpå hinanden, istedet for ved siden af*/
     width: 22vw;
     height: auto;
     text-align: center;
+    /*Elementerne ligger sig i midten*/
+
 }
 
 
