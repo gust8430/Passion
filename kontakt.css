@@ -11,6 +11,79 @@
         color: black;
     }
 
+    footer {
+        background-image: url(images/splash.jpg);
+        height: 20vh;
+    }
+
+    #menuknap {
+        text-align: right;
+        margin-top: -28vw;
+        margin-right: 5vw;
+        font-size: 10vw;
+        cursor: pointer;
+    }
+
+    .hidden {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    #menu a {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        margin-top: 4vw;
+        cursor: pointer;
+        font-family: 'Newsreader', serif;
+        text-decoration: none;
+        font-size: 4.5vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        justify-content: space-between;
+    }
+
+    footer img {
+        width: 40%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer a {
+        margin-top: 2vw;
+    }
+
+
+    #social {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .detaljelogo {
+        width: 50%;
+    }
+
+
 
     /* Style inputs */
     input[type=text],
@@ -98,12 +171,47 @@
 
     }
 
-    @media (min-width: 1160px) {
+    @media (min-width:768px) {
 
-        #input {
-            padding: 1vw;
-            font-size: 1.2vw;
-
+        #menuknap {
+            font-size: 6vw;
         }
 
+        #menu a {
+            font-size: 3vw;
+        }
+
+        h4 {
+            margin-top: 1vw;
+        }
+    }
+
+    @media (min-width:1160px) {
+
+        #menuknap {
+            font-size: 4vw;
+            margin-top: -15vw;
+        }
+
+        #menu a {
+            font-size: 2vw;
+            margin-top: 2vw;
+        }
+
+        h4 {
+            margin-top: -5vw;
+            font-size: 3vw;
+        }
+
+        .detaljelogo {
+            width: 40%;
+        }
+
+        #footer a {
+            margin-top: 1vw;
+        }
+
+        #social a {
+            width: 5vw;
+        }
     }
