@@ -145,13 +145,11 @@ footer a {
 #footer {
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
 }
 
 #social {
     display: flex;
     flex-direction: column;
-    margin-top: 1vw;
     width: 22vw;
     height: auto;
     text-align: center;
@@ -283,14 +281,7 @@ footer a {
         margin-right: 6vw;
     }
 
-    /*  #twitter,
-    #insta {
-        width: 3vw;
-    }
 
-    #fb {
-        width: 300%;
-    }*/
     #social {
         margin-top: 0vw;
         width: 17vw;
