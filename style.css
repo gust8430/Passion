@@ -72,6 +72,7 @@ main {
 .mere {
     background-color: #919A62;
     margin: 2vw;
+    font-size: 4vw;
 }
 
 @keyframes article_kf {
@@ -344,6 +345,7 @@ p {
 
     .mere {
         margin: 1vw;
+        font-size: 2vw;
     }
 
     button {
@@ -446,6 +448,7 @@ p {
 
     .mere {
         margin: 0.5vw;
+        font-size: 1.5vw;
     }
 
     button {
