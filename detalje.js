@@ -7,9 +7,7 @@ const medieurl = "https://ruter-80b2.restdb.io/media/";
 let rute;
 
 //Denne API-key giver os adgang til vores data i vores restdb
-//const myHeaders = {
-//    "x-apikey": "602e59735ad3610fb5bb62e6"
-//}
+
 const options = {
     headers: {
         'x-apikey': "602e59735ad3610fb5bb62e6"
@@ -23,14 +21,8 @@ document.addEventListener("DOMContentLoaded", loadJSON);
 
 
 //Her sætter vi en asynkron funktion der fortæller at vi gerne vil fetche dataen fra vores variabel "url". Vi fortæller funktionen at den skal vente med at oprette variablen "respons", til al fetch har hentet vores data
-//Variablen "ruter" bruger vi til at lave vores data om til json. Derefter bliver funktionen visRuter kaldt
 async function loadJSON() {
     console.log("visDetaljer");
-
-
-    //    const JSONData = await fetch(`https://ruter-80b2.restdb.io/rest/ruteliste/${id}`, {
-    //        headers: myHeaders
-    //    });
 
     const JSONData = await fetch(`https://ruter-80b2.restdb.io/rest/ruteliste/${id}`, options);
 
@@ -64,7 +56,8 @@ function tilbageRuterne() {
     window.history.back();
 }
 
-
+//Her ligger koden til vores burgermenu, der gør at vi kan "toggle" mellem om vores menu skal være åben eller lukket
+//Vi laver derudover også om i textcontentet på burgermenuikonet alt efter om menuen er åben eller lukket
 function toggleMenu() {
     console.log("toggleMenu");
 

@@ -2,13 +2,16 @@
     margin: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
+    /*Gør at den ikke springer når vi linker til en anden side, men har en mere "smooth" bevægelse*/
 }
 
 body {
     background: rgb(73, 82, 30);
     background: linear-gradient(180deg, rgba(73, 82, 30, 1) 0%, rgba(73, 82, 30, 0.5385504543614321) 100%);
+    /*Giver os en gradient baggrund*/
 }
 
 /*----------HER STARTER MAIN INDEX.HTML------------*/
@@ -17,7 +20,6 @@ main {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 1fr;
     grid-gap: 10px;
-    /*    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));*/
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -27,6 +29,7 @@ main {
     padding: 0;
     border: none;
     box-shadow: 7px 7px 5px 2px rgb(0 0 0 / 18%);
+    /*Lægger en skygge på vores artikler*/
     margin: 2vw;
     cursor: pointer;
     background-color: white;
@@ -47,6 +50,8 @@ main {
     to {
         transform: scale(0.95);
     }
+
+    /*Giver vores article en css-animation, så den zoomer lidt ind, når man tager musen over*/
 }
 
 
@@ -73,6 +78,7 @@ footer {
 .hidden {
     opacity: 0;
     transform: translateX(-200%);
+    /*Gemmer vores #menu, når burgermenuen er lukket*/
 }
 
 #menu a {
