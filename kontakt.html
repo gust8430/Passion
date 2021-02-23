@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiden Går - Kontakt</title>
+    <link rel="stylesheet" href="detalje.css">
+    <link rel="stylesheet" href="kontakt.css">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="detaljelogo" src="images/logo_sortt.svg" alt="Logo">
+        </a>
+        <div class="menuknap" id="menuknap">☰</div>
+        <div id="menu" class="hidden">
+            <a href="index.html#voresruter">RUTER</a>
+            <a href="">OM</a>
+            <a href="kontakt.html">KONTAKT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div style="text-align:center">
+            <h4 id="h4">Kontakt os</h4>
+            <p>Skriv en besked</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/MicrosoftTeams-image.png" style="width:100%">
+            </div>
+            <div class="column">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Dit navn..">
+                <label for="efternavn">Efternavn</label>
+                <input type="text" id="efternavn" name="efternavn" placeholder="Dit efternavn..">
+                <label for="landsdel">Landsdel</label>
+                <select id="Landsdel" name="landsdel">
+                    <option value="jylland">Jylland</option>
+                    <option value="fyn">Fyn</option>
+                    <option value="sjælland">Sjælland</option>
+                </select>
+                <label for="Emne">Emne</label>
+                <textarea id="Emne" name="Emne" placeholder="Skriv noget.." style="height:170px"></textarea>
+
+
+
+                <a href="/tak.html">
+                    <input id="input" type="Indsend" value="Indsend">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/logo_hvid.svg" alt="Logo i footer">
+        <hr>
+        <div id="footer">
+            <a href="index.html#voresruter">RUTER</a>
+            <a href="">OM</a>
+            <a href="kontakt.html">KONTAKT</a>
+        </div>
+        <hr>
+        <div id="social">
+            <a href="">
+                <img src="images/Component%202%20%E2%80%93%201.png" alt="twitter-ikon">
+            </a>
+            <a href="">
+                <img src="images/Component%201%20%E2%80%93%201.png" alt="instagram-ikon">
+            </a>
+            <a href="">
+                <img id="fb" src="images/Component%203%20%E2%80%93%201.png" alt="facebook-ikon">
+            </a>
+
+
+        </div>
+
+    </footer>
+    <script>
+        window.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+        }
+
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+
+        }
+    </script>
+</body></html>

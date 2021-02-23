@@ -1,0 +1,102 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: beige;
+    }
+
+
+    #menuknap {
+        color: black;
+    }
+
+    /* Style inputs */
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        /* resize: vertical;*/
+    }
+
+    input[type=indsend] {
+        background-color: #80a381;
+        color: white;
+        padding: 12px 2px;
+        border: none;
+        cursor: pointer;
+        margin-left: 2px;
+    }
+
+    input[type=indsend]:hover {
+        background-color: #a9c7aa;
+    }
+
+
+
+    /* Style the container/contact section */
+    .container {
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+
+    /* Create two columns that float next to eachother */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+
+    p {
+        font-family: 'Cinzel', serif;
+    }
+
+    h4 {
+        margin-top: -10vw;
+    }
+
+    .row {
+        font-family: 'Newsreader', serif;
+
+    }
+
+    .hidden {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    #menu a {
+        color: black;
+    }
+
+    #input {
+        padding: 2vw;
+        font-family: 'Newsreader', serif;
+
+    }
+
+    h4 {
+        font-family: 'Cinzel', serif;
+        font-size: 4vw;
+    }
+
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .column,
+        input[type=indsend] {
+            width: 100%;
+            margin-top: 0;
+        }
+
+
+    }
