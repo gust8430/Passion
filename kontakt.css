@@ -14,7 +14,12 @@
 
     footer {
         background-image: url(images/splash.jpg);
-        height: 20vh;
+        height: 25vh;
+    }
+
+    #footer {
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 
     #menuknap {
@@ -47,7 +52,7 @@
     footer {
         display: flex;
         flex-direction: row;
-        padding: 2vw;
+        padding: 3vw;
         justify-content: space-between;
         /* Her laver vi rum imellem elementerne i footeren*/
     }
@@ -79,43 +84,6 @@
         text-align: center;
     }
 
-    /*    footer {
-        display: flex;
-        flex-direction: row;
-        padding: 2vw;
-        justify-content: space-between;
-    }
-
-    footer img {
-        width: 40%;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
-
-    #footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #footer a {
-        margin-top: 2vw;
-    }*/
-
-
-    /*    #social {
-        display: flex;
-        flex-direction: column;
-        width: 15vw;
-        height: auto;
-        text-align: center;
-    }*/
-
     .detaljelogo {
         width: 50%;
     }
@@ -141,6 +109,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
         color: white;
         padding: 12px 2px;
         border: none;
+        box-shadow: 2px 2px 3px 1px rgba(0 0 0 / 25%);
 
         /*        cursor gør at man kan se, at man kan trykke på knappen, når musen føres henover.*/
         cursor: pointer;
@@ -150,7 +119,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
     /*Gør at 'indsend' bliver en anden farve, når man holder musen henover.*/
 
     input[type=indsend]:hover {
-        background-color: #a9c7aa;
+        background-color: #BE815D;
     }
 
 
@@ -194,7 +163,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
     }
 
     #input {
-        padding: 2vw;
+        padding: 1.2vw;
         font-family: 'Newsreader', serif;
 
     }
@@ -216,6 +185,24 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
         /*   footer {
             font-size: 2.5vw;
         }*/
+
+
+    }
+
+    @media (min-width:768px) {
+
+        #menuknap {
+            font-size: 6vw;
+        }
+
+        #menu a {
+            font-size: 3vw;
+        }
+
+        h4 {
+            margin-top: 1vw;
+        }
+
         /*-----------FOOTER-----------*/
         footer #footerlogo {
             width: 30%;
@@ -226,7 +213,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
         }
 
         footer a {
-            margin-top: 2vw;
+            margin-top: 1vw;
             margin-left: 3vw;
         }
 
@@ -245,24 +232,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
         }
 
         #social a {
-            margin-top: 1vw;
-        }
-
-
-    }
-
-    @media (min-width:768px) {
-
-        #menuknap {
-            font-size: 6vw;
-        }
-
-        #menu a {
-            font-size: 3vw;
-        }
-
-        h4 {
-            margin-top: 1vw;
+            margin-top: 0vw;
         }
     }
 
@@ -287,18 +257,6 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
             width: 30%;
         }
 
-        /*    #footer a {
-            margin-top: 1vw;
-        }
-
-        footer {
-            font-size: 1.5vw;
-        }
-
-        #social a {
-            width: 5vw;
-        }*/
-
         /*-----------FOOTER-----------*/
         footer #footerlogo {
             width: 30%;
@@ -314,7 +272,7 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
         }
 
         #footer {
-            margin-top: 1vw;
+            margin-top: -1vw;
             margin-left: 6vw;
             margin-right: 6vw;
         }
@@ -325,5 +283,4 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
             margin-right: 5vw;
             width: 11.5vw;
         }
-
     }

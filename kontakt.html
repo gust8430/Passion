@@ -41,50 +41,50 @@
         </div>
     </header>
     <!--Følgende container indeholder kontaktformular hvor brugeren kan interagere på sitet-->
-    <div class="container">
-        <div style="text-align:center">
-            <h4 id="h4">Kontakt os</h4>
-            <p>Skriv en besked</p>
-        </div>
+    <main>
+        <div class="container">
+            <div style="text-align:center">
+                <h4 id="h4">Kontakt os</h4>
+                <p>Skriv en besked</p>
+            </div>
 
-        <!--  Denne kode er fra w3schools.com.
+            <!--  Denne kode er fra w3schools.com.
         Her ligger et div med classen "row", som indeholder classes "column". Den ene column er med et billede, og den anden column indeholder boxes man kan udfylde m. navn og mere.-->
-        <div class="row">
-            <div class="column">
-                <img src="images/MicrosoftTeams-image.png" style="width:100%">
-            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/MicrosoftTeams-image.png" style="width:100%">
+                </div>
 
-            <!--    Den anden class 'column' indenholder labels, som beskriver inputs indhold. <input> er det element, som gør at brugeren kan skrive data i en lille form for boks. <input> har typeattributten tekst, da det er navne, som man skriver. Placeholder gør at vi kan vise, hvad der evt. kan stå i boksen.-->
-            <div class="column">
-                <label for="fornavn">Fornavn</label>
-                <input type="text" id="fornavn" name="fornavn" placeholder="Dit navn..">
-                <label for="efternavn">Efternavn</label>
-                <input type="text" id="efternavn" name="efternavn" placeholder="Dit efternavn..">
-                <label for="landsdel">Landsdel</label>
-                <select id="Landsdel" name="landsdel">
+                <!--    Den anden class 'column' indenholder labels, som beskriver inputs indhold. <input> er det element, som gør at brugeren kan skrive data i en lille form for boks. <input> har typeattributten tekst, da det er navne, som man skriver. Placeholder gør at vi kan vise, hvad der evt. kan stå i boksen.-->
+                <div class="column">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" id="fornavn" name="fornavn" placeholder="Dit navn..">
+                    <label for="efternavn">Efternavn</label>
+                    <input type="text" id="efternavn" name="efternavn" placeholder="Dit efternavn..">
+                    <label for="landsdel">Landsdel</label>
+                    <select id="Landsdel" name="landsdel">
 
-                    <!--                   Option value, er i dette tilfælde, den som gør at man kan vælge sin landsdel. Option value gør du kan vælge den værdi som giver mening for dig. -->
-                    <option value="jylland">Jylland</option>
-                    <option value="fyn">Fyn</option>
-                    <option value="sjælland">Sjælland</option>
-                </select>
-                <label for="Emne">Emne</label>
+                        <!--                   Option value, er i dette tilfælde, den som gør at man kan vælge sin landsdel. Option value gør du kan vælge den værdi som giver mening for dig. -->
+                        <option value="jylland">Jylland</option>
+                        <option value="fyn">Fyn</option>
+                        <option value="sjælland">Sjælland</option>
+                    </select>
+                    <label for="Emne">Emne</label>
 
-                <!--                Textarea laver en lille boks, som du kan skrive tekst i. Igen viser placeholder et eksempel på hvad du kan skrive i denne boks.-->
-                <textarea id="Emne" name="Emne" placeholder="Skriv noget.." style="height:170px"></textarea>
+                    <!--                Textarea laver en lille boks, som du kan skrive tekst i. Igen viser placeholder et eksempel på hvad du kan skrive i denne boks.-->
+                    <textarea id="Emne" name="Emne" placeholder="Skriv noget.." style="height:170px"></textarea>
 
 
 
-                <a href="/tak.html">
-                    <input id="input" type="Indsend" value="Indsend">
-                </a>
+                    <a href="/tak.html">
+                        <input id="input" type="Indsend" value="Indsend">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-
+    </main>
+    <!--    I vores footer har vi et logo, en lille menu og ikoner til sociale medier-->
     <footer>
-        <!--    I vores footer har vi et logo, en lille menu og ikoner til sociale medier-->
-
         <img id="footerlogo" src="images/logo_hvid.svg" alt="Logo i footer">
         <hr>
         <div id="footer">
@@ -138,5 +138,8 @@
             }
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
