@@ -17,17 +17,17 @@ const options = {
 };
 
 
-//Når vi sætter følgende eventlistener på vores document, kan vi sikre os at al vores html-content er loaded, før vi fetch'er vores data og tilføjer JavaScript
+//Når vi sætter følgende eventlistener på vores document, kan vi sikre os at al vores html-content er loaded, før vi fetch'er vores data og tilføjer JavaScript. Når DOMContent er loaded, kører funktionen start
 document.addEventListener("DOMContentLoaded", start)
 
-//Disse globale variabler er vigtige at få sat, så vi senere kan bruge dem
+//Disse globale variabler er vigtige at få sat, så vi senere kan bruge dem i visRuter
 let ruter;
 let filter = "alle";
 
 //Denne funktion bliver kaldt, når al vores DOM-content er loaded
-//Her sætter vi en variabel, der tager fat i vores filtreringsknapper. Ved at sætte denne variabel, skal vi ikke skrive en hel lang sætning hver gang vi ønsker at få fat i vores knapper
-//Derudover sætter vi en eventlistener på hver af disse knapper, da vi gerne vil kalde en funktion, når der klikkes på en af dem
-//Denne funktion kalder til sidst også en ny funktion, kaldet hentData, der sørger for at fetch'e al vores data fra restdb
+//Variablen tager fat i vores filtreringsknapper
+//Eventlistener bliver tilføjet på hver af disse knapper, da vi gerne vil kalde en funktion, når der klikkes på en af dem
+//Kalder funktionen hentData
 function start() {
     console.log("start");
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
@@ -40,13 +40,11 @@ function start() {
 
 
 //Denne funktion bliver kaldt når man klikker på en af filtreringsknapperne
-//Her hiver vi fat i vores dataset, der er det der gør at alle vores ruter bliver filtreret udfra de kategorier vi har valgt
-//Derudover ændrer vi textcontent på "this", der gør at overskriften skifter i takt med de knapper man klikker på
-//Til sidst tilføjer vi .valgt til den knap vi har trykket på. Denne klasse er stylet således, at den knap man har valgt, ændrer farve. Dette er for at fremme brugervenligheden
-//.valgt bliver derudover fjernet fra den knap der lige har haft den
-//Til sidst kalder denne funktion også en anden funktion kaldet visRuter, der gør at vores array med alle vores objekter bliver vist i et loop-view
-
-
+//Alle vores ruter bliver filtreret udfra de kategorier vi har valgt
+//Textcontent ændres på "this", der gør at overskriften skifter i takt med de knapper man klikker på
+//.valgt bliver fjernet fra alle knapper
+//Tilføjer .valgt til den knap vi har trykket på. For at fremme brugervenligheden
+//Kalder funtionen visRuter
 function filtrerRuter() {
     filter = this.dataset.beliggenhed;
     console.log("Ruter", filter);
@@ -60,8 +58,11 @@ function filtrerRuter() {
     visRuter();
 }
 
-//Her sætter vi en asynkron funktion der fortæller at vi gerne vil fetche dataen fra vores variabel "url". Vi fortæller funktionen at den skal vente med at opruter variablen "respons", til al fetch har hentet vores data
-//Variablen "ruter" bruger vi til at lave vores data om til json. Derefter bliver funktionen visRuter kaldt
+//Asynkron funktion der fetcher dataen fra vores variabel "url"
+//Den skal vente med at oprette variablen "respons", til fetch har hentet vores data
+//Vores array bliver vist i et loop-view
+//Laver data om til json
+//Funktionen visRuter bliver kaldt
 async function hentData() {
     const respons = await fetch(url, options);
     ruter = await respons.json();
@@ -69,9 +70,9 @@ async function hentData() {
     visRuter();
 }
 
-//I denne funktion sætter vi en for.Each på vores ruter. Det betyder at for hver rute, vil vi gerne have noget content der svarer til det objekt fra vores array der bliver vist. Al dette content er det vi har genereret på restdb, og hentet ind i vores dokument som json
-//Al dette content "append'er" vi i vores main-tag via vores konstante variabel "klon". Det gør at alle vores ruter bliver implementeret på vores site
-//Derudover har vi tilføjet en eventlistener på vores article-tag, der gør at vores funktion visDetaljer bliver kaldt, når man klikker på det
+//for.Each på vores ruter.
+//Content bliver append'et til main-taget
+//Eventlistener på vores article-tag, der gør at vores funktion visDetaljer bliver kaldt, når man klikker på det
 function visRuter() {
 
     main.textContent = "";
@@ -95,13 +96,14 @@ function visRuter() {
 }
 
 
-//Denne funktion tager fat i id'et for præcis det objekt vi har klikket på, og kan, ved hjælp af html-siden til vores singleview, vise al den rigtige content for dette objekt
+//Tager fat i id'et for det objekt der er klikket på og viser i singleview
 function visDetaljer(prut) {
     console.log("visDetaljer");
     location.href = `detalje.html?id=${prut._id}`;
 }
 
-
+//Man kan "toggle" mellem om vores menu skal være åben eller lukket
+//Textcontentet på burgermenuikonet ændres alt efter om menuen er åben eller lukket
 function toggleMenu() {
     console.log("toggleMenu");
 

@@ -187,7 +187,7 @@ footer {
     font-family: 'Cinzel', serif;
     border-style: solid;
     padding: 2vw;
-    background-color: rgb(105, 145, 105);
+    background-color: beige;
 }
 
 .section_wrapper img {
@@ -225,7 +225,7 @@ nav {
 
 button {
     font-family: 'Newsreader', serif;
-    background-color: white;
+    background-color: beige;
     padding: 3vw;
     margin: 1.5vw 1.5vw 2vw 1.5vw;
     cursor: pointer;
