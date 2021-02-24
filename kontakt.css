@@ -85,7 +85,8 @@
 
 
 
-    /* Style inputs */
+    /* Koden er fra w3schools.com. Her styles input som har firkantede paranteser rundt om sig, da det er input med typen text, der skal styles. Her styles også select, som indeholder værdierne landsdele. Textarea styles også her, som er den boks man skriver en uddybende besked i.
+Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og hvor langt de skal være fra hinanden */
     input[type=text],
     select,
     textarea {
@@ -96,14 +97,20 @@
         margin-bottom: 16px;
     }
 
+    /* Koden er fra w3schools.com. Her styles input som har firkantede paranteser rundt om sig, da denne input har typen indsend, som er boksen, der ligner en knap, hvor man trykker for at sende sin mail. */
+
     input[type=indsend] {
         background-color: #80a381;
         color: white;
         padding: 12px 2px;
         border: none;
+
+        /*        cursor gør at man kan se, at man kan trykke på knappen, når musen føres henover.*/
         cursor: pointer;
         margin-left: 2px;
     }
+
+    /*Gør at 'indsend' bliver en anden farve, når man holder musen henover.*/
 
     input[type=indsend]:hover {
         background-color: #a9c7aa;
