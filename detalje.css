@@ -139,6 +139,7 @@ button {
     cursor: pointer;
     box-shadow: 2px 2px 3px 1px rgba(0 0 0 / 25%);
     border: none;
+    /* Gør at vores knapper ikke har en border */
 
 }
 
@@ -160,6 +161,7 @@ button:hover {
 footer {
     display: flex;
     flex-direction: row;
+    /*Lægger vores footer i en række, fremfor at elementerne ligger ovenpå hinanden*/
     padding: 2vw;
     justify-content: space-between;
     /* Her laver vi rum imellem elementerne i footeren*/
@@ -258,7 +260,7 @@ p {
 
 /*----------   CSS TIL SINGLEVIEW SLUT    ----------*/
 
-
+/*Her laver vi sitet responsivt med media q's til tablet*/
 @media (min-width: 768px) {
 
     main {
@@ -335,6 +337,8 @@ p {
 
 
 }
+
+/*Her laver vi sitet responsivt med media q's til web*/
 
 @media (min-width: 1160px) {
     #menuknap {

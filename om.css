@@ -172,7 +172,7 @@ footer a {
 
 }
 
-
+/*I følgende media q har vi gjort vores site responsivt til tablet*/
 @media (min-width: 768px) {
 
     #om_section {
@@ -311,6 +311,8 @@ footer a {
 
 
 }
+
+/*I følgende media q har vi gjort vores site responsivt til web*/
 
 @media (min-width: 1160px) {
 
