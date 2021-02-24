@@ -317,6 +317,7 @@ h3 {
 p {
     margin-top: 2vw;
     font-family: 'Newsreader', serif;
+    line-height: 1.6;
 }
 
 .detaljelogo {
@@ -442,7 +443,7 @@ p {
     }
 
     .section_wrapper img {
-        margin-top: 1vw;
+        margin-top: 2vw;
         width: 80%;
         height: 69%;
         border-radius: 50%;
@@ -457,7 +458,7 @@ p {
     }
 
     #alleruter {
-        margin-top: 9vw;
+        margin-top: 7vw;
         margin-left: 3.3vw;
         font-size: 2.5vw;
     }
