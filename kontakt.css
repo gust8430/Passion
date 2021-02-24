@@ -1,5 +1,6 @@
     * {
         box-sizing: border-box;
+        margin: 0;
     }
 
     body {
@@ -42,7 +43,43 @@
         font-size: 4.5vw;
     }
 
+    /*-----------FOOTER-----------*/
     footer {
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        justify-content: space-between;
+        /* Her laver vi rum imellem elementerne i footeren*/
+    }
+
+    footer img {
+        width: 40%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vw;
+    }
+
+    #social {
+        display: flex;
+        flex-direction: column;
+        width: 22vw;
+        height: auto;
+        text-align: center;
+    }
+
+    /*    footer {
         display: flex;
         flex-direction: row;
         padding: 2vw;
@@ -68,16 +105,16 @@
 
     #footer a {
         margin-top: 2vw;
-    }
+    }*/
 
 
-    #social {
+    /*    #social {
         display: flex;
         flex-direction: column;
         width: 15vw;
         height: auto;
         text-align: center;
-    }
+    }*/
 
     .detaljelogo {
         width: 50%;
@@ -176,6 +213,42 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
             margin-top: 0;
         }
 
+        /*   footer {
+            font-size: 2.5vw;
+        }*/
+        /*-----------FOOTER-----------*/
+        footer #footerlogo {
+            width: 30%;
+        }
+
+        footer {
+            font-size: 2.5vw;
+        }
+
+        footer a {
+            margin-top: 2vw;
+            margin-left: 3vw;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1vw;
+            margin-left: 6vw;
+            margin-right: 6vw;
+        }
+
+        #social {
+            margin-top: 0vw;
+            width: 17vw;
+            height: auto;
+        }
+
+        #social a {
+            margin-top: 1vw;
+        }
+
+
     }
 
     @media (min-width:768px) {
@@ -214,11 +287,43 @@ Det som bliver stylet, er kanten rundt om boksene, størrelsen på boksene, og h
             width: 30%;
         }
 
-        #footer a {
+        /*    #footer a {
             margin-top: 1vw;
+        }
+
+        footer {
+            font-size: 1.5vw;
         }
 
         #social a {
             width: 5vw;
+        }*/
+
+        /*-----------FOOTER-----------*/
+        footer #footerlogo {
+            width: 30%;
         }
+
+        footer {
+            font-size: 1.5vw;
+        }
+
+        footer a {
+            margin-top: 1vw;
+            margin-left: 3vw;
+        }
+
+        #footer {
+            margin-top: 1vw;
+            margin-left: 6vw;
+            margin-right: 6vw;
+        }
+
+        #social {
+            margin-top: 0vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            width: 11.5vw;
+        }
+
     }
