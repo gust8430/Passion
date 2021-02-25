@@ -91,8 +91,8 @@ body {
     top: 5vw;
     margin: 5vw;
     margin-top: 9vw;
-    padding-right: 6vw;
-    margin-left: 10vw;
+    padding-right: 11vw;
+    margin-left: 8vw;
 }
 
 
@@ -112,7 +112,7 @@ body {
 
 .spor {
     position: absolute;
-    width: 90vw;
+    width: 92vw;
     /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     top: 6.5vw;
     left: 0;
