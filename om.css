@@ -112,9 +112,10 @@ body {
 
 .spor {
     position: absolute;
+    width: 90vw;
     /*Ved at sætte positionen til absolute, kan elementet med denne klasse, positionere sig anderledes ift. andre elementer*/
     top: 6.5vw;
-    left: 0vw;
+    left: 0;
 }
 
 .pic {
